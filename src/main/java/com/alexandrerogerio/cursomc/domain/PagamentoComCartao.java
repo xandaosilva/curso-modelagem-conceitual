@@ -1,11 +1,13 @@
 package com.alexandrerogerio.cursomc.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import com.alexandrerogerio.cursomc.domain.enums.EstadoPagamento;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 @Entity
+@Table(name = "pagamentoComCartao")
 @JsonTypeName("pagamentoComCartao")
 public class PagamentoComCartao extends Pagamento{
 
